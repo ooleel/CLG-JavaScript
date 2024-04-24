@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson 1: introduction to JavaScript">
+    <!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
+    <title>Introduction to Javascript</title>
+</head>
+
+<body
+    style="background-color:aliceblue; text-align: center;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <header>
+        <div class="wrapper">
+            <img class="site-logo" src="/images/SOC-logo.svg" alt="Website logo" style="width: 200px;"
+                onContextMenu="alert('Have a look at their website!'); ">
+        </div>
+    </header>
+
+    <section id="main-content">
+        <div class="wrapper">
+            <h1 onClick="colorPop();">Let's learn <span class="jsname">JavaScript</span> foundations together!</h1>
+            <img class="jslogo" src="/images/JavaScript-logo.png" alt="Logo JavaScript" style="width: 100px;" />
+        </div>
+        <br>
+        <form>
+            <select onChange="colorPop();">
+                <option>Choose me!</option>
+                <option>No, me!</option>
+                <option>You're both wrong, ME!</option>
+            </select>
+        </form>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <p>© leeloo schaff 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        alert("This is not a drill, but an alert!");
+
+        console.log("This is a console log message.");
+        console.log("Hello there!");
+        console.log("General Kenobi!");
+
+        let message = "Peek-a-boo!"
+        console.log(message);
+
+        document.querySelector('.jslogo').style.transform = "rotate(-15deg)";
+
+        // Changes colour when the user clicks on the element
+        function colorPop() {
+            let title = document.querySelector('.jsname');
+            console.log(title);
+            title.style.color = 'navy';
+            title.style.backgroundColor = 'hotpink';
+        }
+    </script>
+</body>
+
+</html>
