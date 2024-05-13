@@ -6,11 +6,11 @@ console.log(1 + 1);
 let message = "Peek-a-boo!";
 console.log(message);
 
-document.querySelector(".jslogo").style.transform = "rotate(-15deg)";
+document.querySelector("#logo").style.transform = "rotate(-15deg)";
 
 // Changes colour when the user clicks on the element
 function colorPop() {
-  let title = document.querySelector(".jsname");
+  let title = document.querySelector("#topic");
   console.log(title);
   title.style.color = "navy";
   title.style.backgroundColor = "hotpink";

@@ -1,13 +1,93 @@
+/* General */
 body{
-    background-color:aliceblue; 
-    text-align: center;  
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#f0f8ff;
+    margin:0; /* removes the blank space above the first section */
+    font-family: 'Overpass', sans-serif;
+    background-image: url(/images/tile_background.png);
 }
 
-.site-logo{
-    width: 200px;
+header, nav, main, footer{
+    background-color:#fff;
+    box-shadow: 0 4px 10px #ccc;
+    padding: 1em;
+    margin-bottom: 1em; 
+    border-radius: 4px;
 }
 
-.jslogo{
-    width: 100px;
+#wrapper{
+    width:1200px;
+    margin: auto;
 }
+
+/* Nav */
+nav{
+    display: flex;
+    gap: 1.5em;
+    padding: 0.5em; 
+    justify-content: center;
+}
+
+nav a{
+    padding: 0.5em;
+    color: #ef218c;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+nav a:hover{
+    background-color: #ef218c;
+    color:#fff;
+}
+
+.active{
+    background-color: #ef218c;
+    color:#fff;
+}
+
+#logo{
+    width: 150px;
+}
+
+.banner{
+    margin-bottom: 1em;
+    background-image: url(/images/banner.jpg);
+    /* Image as background pic allows to round the corners */
+    width: 1200px;
+    height: 360px;
+    border-radius: 4px;
+}
+
+h1{
+    color: #ef218c;
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 900;
+}
+
+h2{
+    color: #ee5012;
+    font-family: 'Overpass Mono', sans-serif;
+}
+
+footer{
+    text-align: center;
+    background-color: #607822;
+    color:#fff;
+    font-size: x-small;
+}
+
+#copyright{
+    font-family: 'Borel', cursive;
+}
+
+/* Index / homepage */
+
+
+.wp-img{
+    display: block;
+    margin:auto;
+    padding: 1em;
+    box-shadow: 0 4px 10px #ccc;
+}
+
+/* About page */

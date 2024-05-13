@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lesson 1: introduction to JavaScript">
-    <link rel="stylesheet" href="/week1/styles.css" type="text/css">
-    <title>Introduction to Javascript</title>
+    <meta name="description" content="Read about my adventures in Korea!">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Borel&family=Overpass+Mono:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Going Places</title>
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <img class="site-logo" src="/week1/images/SOC-logo.svg" alt="Website logo" onContextMenu="alert('Have a look at their website!'); ">
-        </div>
-    </header>
+    <div id="wrapper">
+        <header>
+            <a href="index.html" title="Back to the Homepage"> <img id="logo" src="/images/logo.png" alt="blog logo"> </a>
+        </header>
 
-    <section id="main-content">
-        <div class="wrapper">
-            <h1 onClick="colorPop();">Let's learn <span class="jsname">JavaScript</span> foundations together!</h1>
-            <img class="jslogo" src="/week1/images/JavaScript-logo.png" alt="Logo JavaScript"/>
-        </div>
-        <br>
-        <form>
-            <select onChange="colorPop();">
-                <option>Choose me!</option>
-                <option>No, me!</option>
-                <option>You're both wrong, ME!</option>
-            </select>
-        </form>
-    </section>
+        <nav>
+            <a class="active" href="index.html">Home</a> <!--done-->
+            <a href="about.html">About</a>
+            <a href="travelideas.html">Travel ideas</a> 
+            <a href="advice.html">Advice</a> <!--done-->
+        </nav>
 
-    <footer>
-        <div class="wrapper">
-            <p>© leeloo schaff 2024</p>
-        </div>
-    </footer>
+        <div class="banner"></div>
 
-    <script src="/week1/main.js"></script>
+        <main>
+            <h1>Get ready, we're going places!</h1>
+            <h2>Read about my adventures in Korea!</h2>
+            <p>You'll find here tips and tricks about travelling to <span id="topic" onmouseover="colorpop()">South Korea</span>, as well as some recommendations for your travel!</p>
+        </main>
+
+        <footer>CLG • SoC • Navigating JavaScript<br>
+            <span id="copyright">&copy; 2024 leeloo schaff</span>
+        </footer>
+    </div>
 </body>
-
 </html>
