@@ -6,12 +6,24 @@ body{
     background-image: url(/images/tile_background.png);
 }
 
-header, nav, main, footer{
+header, main, footer{
     background-color:#fff;
     box-shadow: 0 4px 10px #ccc;
     padding: 1em;
     margin-bottom: 1em; 
     border-radius: 4px;
+}
+
+header{
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 #wrapper{
