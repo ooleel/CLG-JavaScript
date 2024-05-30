@@ -3,7 +3,6 @@ body{
     background-color:#f0f8ff;
     margin:0; /* removes the blank space above the first section */
     font-family: 'Overpass', sans-serif;
-    background-image: url(/images/tile_background.png);
 }
 
 header, main, footer{
@@ -41,39 +40,40 @@ nav{
 
 nav a{
     padding: 0.5em;
-    color: #ef218c;
+    color: #a36d8b;
     font-weight: bold;
     text-decoration: none;
     border-radius: 4px;
 }
 
 nav a:hover{
-    background-color: #ef218c;
+    background-color: #a36d8b;
     color:#fff;
 }
 
 .active{
-    background-color: #ef218c;
+    background-color: #a36d8b;
     color:#fff;
 }
 
 #logo{
-    width: 150px;
+    width: 100px;
 }
 
 .banner{
     margin-bottom: 1em;
-    background-image: url(/images/banner.jpg);
+    background-image: url(/images/banner.png);
     /* Image as background pic allows to round the corners */
     width: 1200px;
-    height: 360px;
+    height: 300px;
     border-radius: 4px;
 }
 
 h1{
-    color: #ef218c;
+    color: #426a41;
     font-family: 'BenchNine', sans-serif;
     font-weight: 900;
+    font-size: xx-large;
 }
 
 h2{
@@ -83,7 +83,7 @@ h2{
 
 footer{
     text-align: center;
-    background-color: #607822;
+    background-color: #506b4f;
     color:#fff;
     font-size: x-small;
 }
@@ -93,13 +93,18 @@ footer{
 }
 
 /* Index / homepage */
-
-
-.wp-img{
-    display: block;
-    margin:auto;
-    padding: 1em;
-    box-shadow: 0 4px 10px #ccc;
+#intro-wrap{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-/* About page */
+.intro{
+    width: 450px;
+}
+
+.gradient{
+    font-weight: bold;
+    background: linear-gradient(90deg, #002654, #ed2939);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

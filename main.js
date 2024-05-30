@@ -1,11 +1,14 @@
-//My fucntions
+//My functions
 // Changes colour when the user clicks on the element
-function colourPop() {
-  let title = document.querySelector("#topic");
-  console.log(title);
-  title.style.color = "navy";
-  title.style.backgroundColor = "hotpink";
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const textElement = document.getElementById("salut")
+
+  function colourPop(startColor, endColor) {
+    textElement.style.background = "linear-gradient(90deg, ${startColor}, ${endColor})";
+    textElement.style.webkitBackgroungClip = "text";
+    textElement.style.webkitTextFillColor = "transparent";
+  }
+});
 
 //Top to bottom
 alert("This is not a drill, but an alert!");
@@ -27,7 +30,7 @@ console.log("The speed of light is ${speedLight} meters per second.")
 
 // let circleRadius = 4;
 function circlePerimeter(radius){
-  let radius = 4; 
+  let rad = 4; 
   let result = radius * 2 * pi;
 }
 circlePerimeter();
